@@ -1,0 +1,12 @@
+public class ArrangingCoins {
+    public int arrangeCoins(int n) {
+        int row = 0;
+
+        while (n >= row + 1) {
+            row++;
+            n = n - row;
+        }
+
+        return row;
+    }
+}
